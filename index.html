@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Factor Reduction</title>
+
+        <link rel="stylesheet" href="style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="header-wrapper">
+            <h1 class="header">
+                <span class="header-word">Convert</span>
+                <span class="header-word">your</span>
+                <span class="header-word">fractions</span>
+                <span class="header-word">to</span>
+                <span class="header-word">the</span>
+            
+                <span class="header-fraction"
+                    ><span class="header-num"> simplest </span>
+                    <div class="header-line"></div>
+                    <span class="header-denom"> form </span></span
+                >
+            </h1>
+        </div>
+        <div class="container">
+            <div class="top">
+                <div class="fraction fraction-initial fraction-incomplete">
+                    <div class="numerator">
+                        <input type="number" name="numerator" />
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="denominator">
+                        <input type="number" name="denominator" />
+                    </div>
+                </div>
+
+                <span class="arrow">&DoubleRightArrow;</span>
+
+                <div class="fraction fraction-final">
+                    <div class="numerator num-output">0</div>
+
+                    <div class="line"></div>
+
+                    <div class="denominator denom-output">0</div>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <button class="go">GO!</button>
+            </div>
+        </div>
+
+        <script src="factors.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

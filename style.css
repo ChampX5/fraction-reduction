@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, red, blue);
+    color: white;
+    font-family: Rubik;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header-fraction {
+    margin: 0 25px;
+    background: linear-gradient(180deg, #75ffa3 0%, #82b1ff 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.header-line {
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+
+.header-word {
+    margin: 0 15px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% calc(-50% + 100px);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.fraction input[type='number'] {
+    font-size: 50px;
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: Rubik;
+}
+
+::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.numerator,
+.denominator {
+    width: 100%;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+}
+
+.fraction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.fraction-initial {
+    width: 300px;
+}
+
+.fraction-final {
+    --letter: 1;
+    transition: all 300ms ease-in-out;
+    width: calc(var(--letter) * 40px);
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+.fraction-incomplete > .numerator {
+    margin-bottom: 10px;
+}
+
+.fraction-incomplete > .denominator {
+    margin-top: 10px;
+}
+
+.fraction-complete > .numerator {
+    margin-bottom: 0;
+}
+
+.fraction-complete > .denominator {
+    margin-top: 0;
+}
+
+.arrow {
+    font-size: 50px;
+}
+
+.go {
+    font-size: 30px;
+    font-family: Rubik;
+    padding: 10px 20px;
+    color: white;
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+}
+
+.go:hover {
+    scale: 1.1;
+}
